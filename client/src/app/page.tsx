@@ -1,36 +1,35 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
+    <div >
+      <nav className="flex  justify-between items-center px-5 py-2">
+        <div className="flex gap-20 ">
+          <div className="flex gap-1 cursor-pointer">
+            <Image src="icons/logo.svg" alt="logo" width={20} height={20} />
+            <h1 className="text-lg font-medium">Collab Verge</h1>
+          </div>
+          <ul className="flex gap-4 items-center">
+            <li className="hover:underline cursor-pointer">Hire Influencers</li>
+            <li className="hover:underline cursor-pointer">Find brands</li>
+            <li className="hover:underline cursor-pointer">Why us</li>
+            <li className="hover:underline cursor-pointer">What’s new</li>
+          </ul>
+        </div>
+        <div className="flex items-center gap-4 ">
+          <a className="hover:underline cursor-pointer" href="">Login</a>
+          <button className="bg-primary px-4 text-white py-2 rounded-xl cursor-pointer hover:bg-primary/70">Get Started</button>
+        </div>
+      </nav>
+      <main className="flex">
+        <div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <Link
-            href="/homepage"
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Move to Homepage
-          </Link>
+        </div>
+        <div>
         </div>
       </main>
+
+
     </div>
   );
 }
