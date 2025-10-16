@@ -6,7 +6,6 @@ function page() {
     const name = useTestHook();
     return (
         <div>
-            {name}
             <Test />
         </div>
     )

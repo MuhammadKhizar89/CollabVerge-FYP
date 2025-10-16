@@ -4,6 +4,9 @@
   --color-primary: #E10000;
 }
 
+.font-playfair {
+  font-family: var(--font-playfair) !important;
+}
 @font-face {
   font-family: 'SF Pro Rounded';
   src: url('/SF Pro Rounded/SF-Pro-Rounded-Black.otf') format('opentype');
@@ -62,4 +65,38 @@
 body {
   font-family: 'SF Pro Rounded', sans-serif;
   
+}
+.premiumButton {
+  background: linear-gradient(180deg, #000000 0%, #141414 100%);
+  position: relative;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 14px 36px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.premiumButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(
+    225deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0) 20%
+  );
+  pointer-events: none;
+}
+
+.premiumButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
 }
