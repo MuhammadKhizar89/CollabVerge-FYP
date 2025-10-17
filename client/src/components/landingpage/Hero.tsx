@@ -1,5 +1,6 @@
 import React from 'react'
 import HeroCard from './HeroCard';
+import Image from 'next/image';
 
 function Hero() {
     return (
@@ -22,10 +23,9 @@ function Hero() {
                     />
                     <div className="flex flex-col items-end gap-1">
                         <div className="flex -space-x-2">
-                            <img src="./images/hero-1.jpg" className="h-5 w-5 object-cover rounded-full" alt="" />
-                            <img src="./images/hero-1.jpg" className="h-5 w-5 object-cover rounded-full" alt="" />
-                            <img src="./images/hero-1.jpg" className="h-5 w-5 object-cover rounded-full" alt="" />
-                            <img src="./images/hero-1.jpg" className="h-5 w-5 object-cover rounded-full" alt="" />
+                            {[1, 2, 3, 4, 5].map((i) => <div key={i} className="relative w-6 h-6 rounded-full overflow-hidden">
+                                <Image src="/images/hero-1.jpg" alt="profile" fill className="object-cover" />
+                            </div>)}
                         </div>
                         <span className="text-xs text-gray-500 whitespace-nowrap">
                             100K+ Influencers & brands
@@ -42,8 +42,8 @@ function Hero() {
                     </button>
                 </div>
             </div>
-            <HeroCard/>
-            
+            <HeroCard />
+
         </main>
     )
 }
