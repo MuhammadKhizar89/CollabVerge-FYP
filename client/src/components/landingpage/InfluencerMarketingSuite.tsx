@@ -1,16 +1,16 @@
 export default function InfluencerMarketingSuite() {
     return (
         <section className="flex flex-col items-center gap-10">
-            <div className="w-1/2 text-center flex flex-col gap-2">
+            <div className="w-full lg:w-1/2 text-center flex flex-col gap-2">
                 <div className="border px-3 py-2 self-center rounded-full text-xs flex gap-1 items-center w-fit ">Services</div>
-                <h4 className="text-5xl 2xl:text-6xl ">Your Complete<span className="font-playfair italic text-primary">Influencer</span> Marketing Suite</h4>
+                <h4 className="text-3xl lg:text-5xl 2xl:text-6xl ">Your Complete<span className="font-playfair italic text-primary">Influencer</span> Marketing Suite</h4>
                 <p className="text-[#3F3F3F] text-sm text-wrap">Connect with the right influencers, tools, and insights to make every campaign smarter and more impactful.</p>
             </div>
             <div className="flex flex-wrap w-full gap-5 justify-center items-center">
                 {services.map((service, index) => (
                     <div
                         key={index}
-                        className="group flex flex-col justify-center items-center gap-3 w-[25%] h-[40vh] cursor-pointer  relative border border-gray-400 rounded-3xl overflow-hidden transition-all duration-500 hover:bg-primary hover:text-white">
+                        className="group flex flex-col justify-center items-center gap-3 w-full lg:w-[25%] h-[40vh] lg:h-[40vh] cursor-pointer  relative border border-gray-400 rounded-3xl overflow-hidden transition-all duration-500 hover:bg-primary hover:text-white">
                         <div className="bg-primary text-white rounded-xl p-4 transition-all duration-500 group-hover:bg-white group-hover:text-primary">
                             {service.icon}
                         </div>
