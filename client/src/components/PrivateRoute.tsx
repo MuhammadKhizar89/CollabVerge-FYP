@@ -6,7 +6,7 @@ function PrivateRoute({ children }: Readonly<{
 }>) {
   // Login check logic will be added here
   return (
-    <div className='flex flex-col '>
+    <div className='flex flex-col px-3 lg:px-14  py-2 text-sm'>
       <Navbar />
       {children}
     </div>
