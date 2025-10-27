@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 
 
 const Footer = () => {
@@ -12,10 +13,10 @@ const Footer = () => {
 
           <div className="flex items-center space-x-4">
             <div className="w-10 h-10 bg-white text-[#e50914] rounded-full flex items-center justify-center hover:scale-110 transition-transform cursor-pointer">
-              {/* <FaTelegramPlane size={20} /> */}
+              <FaTelegramPlane size={20} />
             </div>
             <div className="w-10 h-10 bg-white text-[#e50914] rounded-full flex items-center justify-center hover:scale-110 transition-transform cursor-pointer">
-              {/* <FaWhatsapp size={20} /> */}
+              <FaWhatsapp size={20} />
             </div>
           </div>
         </div>

@@ -1,8 +1,8 @@
 "use client"
-import { Moon, Sun } from 'lucide-react'
 import { useTheme } from 'next-themes';
 import Image from 'next/image'
 import React from 'react'
+import { BsMoonFill, BsSunFill } from 'react-icons/bs';
 
 function Navbar() {
   const { theme, setTheme } = useTheme();
@@ -26,7 +26,7 @@ function Navbar() {
         <button className="bg-primary px-4 text-white py-2 rounded-xl cursor-pointer hover:bg-primary/70">Get Started</button>
       </div>
       <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className='fixed bottom-4 right-4 p-3 cursor-pointer z-50  rounded-xl border-2'>
-        {theme === "dark" ? <Sun /> : <Moon />}
+        {theme === "dark" ? <BsSunFill /> : <BsMoonFill />}
       </button>
     </nav>
   )
