@@ -21,7 +21,7 @@ export default function RootLayout({
     // rember padding is applied globally 
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${playfair.variable} font-normal antialiased px-3 lg:px-14 text-sm py-2`}
+        className={`${playfair.variable} font-normal antialiased  text-sm `}
       >
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
           <PrivateRoute>{children}</PrivateRoute>
