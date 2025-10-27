@@ -33,17 +33,17 @@ const WhyChooseUs = () => {
           </p>
         </div>
 
-        <div className="flex gap-x-4">
-          <div className="rounded-2xl border border-gray-200 p-8  flex flex-col justify-center w-[60%]">
+        <div className="flex flex-wrap gap-4">
+          <div className="rounded-2xl border border-gray-200 p-4 lg:p-8  flex flex-col justify-center w-full lg:w-[60%]">
             <div className="text-6xl sm:text-8xl font-light  mb-3 mt-20">45K+</div>
-            <p className="text-gray-700 dark:text-white text-base sm:text-lg">
+            <p className="text-gray-700  text-base sm:text-lg">
               Brands trust our registered creators and influencers
             </p>
           </div>
 
-          <div className="rounded-2xl bg-primary p-8 text-white flex flex-col justify-between relative overflow-hidden">
+          <div className="rounded-2xl bg-primary p-4 lg:p-8 text-white flex flex-col justify-between relative overflow-hidden flex-1">
             <h3 className="text-2xl sm:text-3xl font-bold mb-2">Payment integrations</h3>
-            <p className="text-red-100 text-sm sm:text-lg w-[70%]">
+            <p className="text-red-100 text-sm sm:text-lg w-full lg:w-[70%]">
               Pay and get paid anywhere in the world with trusted, flexible payment integrations
             </p>
 
@@ -87,10 +87,10 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="flex mt-6 gap-x-4">
+        <div className="flex flex-wrap mt-6 gap-4">
           {/* Card 3 */}
           <div
-            className="rounded-2xl overflow-hidden md:col-span-1 h-64 sm:h-80 relative w-[70%]"
+            className="rounded-2xl overflow-hidden md:col-span-1 h-64 sm:h-80 relative w-full lg:w-[70%]"
             style={{
               backgroundImage: "url('/images/landingPage/verified_authentic_network.svg')",
               backgroundSize: "cover",
@@ -99,9 +99,9 @@ const WhyChooseUs = () => {
           ></div>
 
           {/* Card 4 */}
-          <div className="rounded-2xl border border-gray-200 p-8 flex flex-col justify-center w-[30%]">
+          <div className="rounded-2xl border border-gray-200 p-4 lg:p-8 flex flex-col justify-center w-full lg:flex-1">
             <div className="text-6xl sm:text-8xl font-light  mt-16">25M+</div>
-            <p className="text-gray-700 dark:text-white text-base sm:text-lg">Paid to creators</p>
+            <p className="text-gray-700  text-base sm:text-lg">Paid to creators</p>
           </div>
         </div>
       </div>

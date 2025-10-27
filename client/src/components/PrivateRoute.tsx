@@ -8,7 +8,7 @@ function PrivateRoute({ children }: Readonly<{
   // Login check logic will be added here
   return (
     <div className='flex flex-col '>
-      <div className='lg:px-14 pt-2'>
+      <div className='lg:px-14 px-3 pt-2'>
         <Navbar />
         {children}
       </div>
