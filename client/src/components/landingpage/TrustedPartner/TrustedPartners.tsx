@@ -13,12 +13,12 @@ function TrustedPartners() {
           </button>
         </div>
         <div className='flex gap-2 justify-end flex-1   lg:items-start '>
-          <div className='flex flex-col gap-2 bg-gray-100 rounded-xl p-3 items-start w-full lg:w-1/4'>
+          <div className='flex flex-col gap-2 bg-gray-100 dark:bg-transparent dark:border rounded-xl p-3 items-start w-full lg:w-1/4'>
             <BrandIcon />
             <p className='text-2xl'>Brands</p>
             <p className='text-4xl '>80k+</p>
           </div>
-          <div className='flex flex-col gap-2 bg-gray-100 rounded-xl  p-3 items-start  w-full lg:w-1/4'>
+          <div className='flex flex-col gap-2 bg-gray-100 dark:bg-transparent dark:border rounded-xl  p-3 items-start  w-full lg:w-1/4'>
             <CollaborationIcon />
             <p className='text-2xl'>Collaborations</p>
             <p className='text-4xl '>150k+</p>

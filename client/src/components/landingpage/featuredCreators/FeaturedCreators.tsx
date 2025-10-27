@@ -7,11 +7,12 @@ function FeaturedCreators() {
 
     return (
         <div className="bg-primary relative flex flex-col gap-16 w-full h-fit rounded-3xl overflow-hidden py-10">
-            <div className={`absolute inset-0 flex justify-end rotate-180 opacity-50 `}>
-                <FlowerIcon />
-            </div>
-            <Image fill   src="/images/featured-creators-layer.png" alt="layer" className="rounded-3xl  object-cover opacity- absolute inset-0 top-0 bottom-0 right-0" />
-            <div className=" flex flex-col items-center justify-center text-white text-center gap-2 p-3  z-10 ">
+
+            <Image fill src="/images/featured-creators-layer.png" alt="layer" className="rounded-3xl  object-cover opacity- absolute inset-0 top-0 bottom-0 right-0" />
+            <div className="relative flex flex-col items-center justify-center text-white text-center gap-2 p-3  z-10 ">
+                <div className={`absolute inset-0 flex justify-end rotate-180 opacity-50 `}>
+                    <FlowerIcon />
+                </div>
                 <div className="border border-white/50 px-3 py-2 rounded-full bg-[#FFFFFF33] text-xs">
                     Featured Talent
                 </div>
@@ -51,7 +52,7 @@ function FeaturedCreators() {
                 </button>
 
             </div>
-                <Testimonials />
+            <Testimonials />
         </div>
     );
 }

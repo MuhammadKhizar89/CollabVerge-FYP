@@ -43,7 +43,7 @@ export default function HowItWorks() {
           {cards.map((card, i) => (
             <div
               key={card.id}
-              className={`absolute inset-0 bg-primary rounded-3xl p-6 lg:p-10 flex flex-col justify-between transition-all duration-700 ease-out ${
+              className={`absolute inset-0 bg-primary rounded-xl p-6 lg:p-10 flex flex-col justify-between transition-all duration-700 ease-out ${
                 i === activeIndex
                   ? "opacity-100 translate-x-0"
                   : i < activeIndex
@@ -57,7 +57,7 @@ export default function HowItWorks() {
                 {String(card.id).padStart(2, "0")}
               </p>
               <div className="flex flex-col gap-4  text-white items-start z-10">
-                <h6 className="text-5xl font-semibold">{card.title}</h6>
+                <h6 className="text-5xl ">{card.title}</h6>
                 <p className="text-xl lg:w-[60%]">{card.text}</p>
                 <button className="bg-transparent cursor-pointer border border-white px-6 py-2 rounded-full w-fit hover:bg-white hover:text-primary transition-all duration-500">
                   {card.button}
