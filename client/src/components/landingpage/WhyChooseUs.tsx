@@ -29,7 +29,7 @@ const WhyChooseUs = () => {
             Influencer Marketing
           </h1>
           <p className="text-[#3F3F3F] text-xl max-w-lg mx-auto">
-            We're redefining how brands and creators connect by removing the roadblocks that slow collaborations.
+            We&apos;re redefining how brands and creators connect by removing the roadblocks that slow collaborations.
           </p>
         </div>
 

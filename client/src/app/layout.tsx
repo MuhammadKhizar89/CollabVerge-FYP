@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Playfair_Display } from "next/font/google"
+import { Playfair_Display, Poppins } from "next/font/google"
 import PrivateRoute from "@/components/PrivateRoute";
 import { ThemeProvider } from "next-themes";
 export const metadata: Metadata = {
@@ -12,6 +12,11 @@ const playfair = Playfair_Display({
   weight: ['500'],
   variable: '--font-playfair',
 });
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-poppins',
+})
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -21,7 +26,7 @@ export default function RootLayout({
     // rember padding is applied globally 
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${playfair.variable} font-normal antialiased  text-sm `}
+        className={`${playfair.variable} ${poppins.variable} font-normal antialiased  text-sm `}
       >
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
           <PrivateRoute>{children}</PrivateRoute>

@@ -25,7 +25,9 @@
 }
 
 
-
+.font-poppins {
+  font-family: var(--font-poppins) !important;
+}
 
 
 .font-playfair {

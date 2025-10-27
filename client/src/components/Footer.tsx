@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10 relative z-10 px-16">
         {/* Logo */}
         <div className="flex flex-col space-y-6">
-          
+
           <div className="flex items-center space-x-4">
             <div className="w-10 h-10 bg-white text-[#e50914] rounded-full flex items-center justify-center hover:scale-110 transition-transform cursor-pointer">
               {/* <FaTelegramPlane size={20} /> */}
@@ -59,14 +59,14 @@ const Footer = () => {
       {/* Decorative Background Pattern */}
 
       <div className="absolute top-0 bottom-[1vw] right-0 h-[24vw] w-[35vw]">
- <Image
- src="/images/landingPage/footer.svg" alt="loading..." fill className=" opacity-85"/>
+        <Image
+          src="/images/landingPage/footer.svg" alt="loading..." fill className=" opacity-85" />
       </div>
 
-<div className="h-[8vw] "></div>
+      <div className="h-[8vw] "></div>
 
       {/* Big Background Text */}
-      <h1 className=" w-full text-[14.19vw]   text-[#FF6161]/75 leading-none tracking-wide">
+      <h1 className=" w-full text-[16.19vw] font-poppins   text-[#FF6161]/75 leading-none tracking-wide">
         <span className=" relative -left-7 ">COLLAB</span><span className=" relative right-7">VERGE</span>
       </h1>
     </footer>
