@@ -48,7 +48,7 @@ const WhyChooseUs = () => {
             </p>
 
             <div className="relative w-full flex justify-center mt-20">
-              <div className="relative mt-16 flex items-end justify-center">
+              {/* <div className="relative mt-16 flex items-end justify-center">
                 {paymentLogos.map((logo, index) => {
                   const total = paymentLogos.length
                   const angleStep = 45 / (total - 1) // wider arc = more gap
@@ -79,7 +79,85 @@ const WhyChooseUs = () => {
                     </div>
                   )
                 })}
-              </div>
+              </div> */}
+              <div className="relative mt-16 flex items-end justify-center">
+  {/* 1st Logo */}
+  <div
+    className="absolute w-11 h-11 sm:w-16 sm:h-16 bg-white border rounded-xl shadow-lg flex items-center justify-center   
+    transform
+    -translate-x-[140px] translate-y-[20px] rotate-[-22deg]
+    sm:-translate-x-[200px] xl:translate-y-[40px] xl:rotate-[-22deg]"
+    // style={{ transform: `translate(-200px, 40px) rotate(-22deg)` }}
+  >
+    <Image
+      src="/images/landingPage/stripe.svg"
+      alt="Stripe"
+      fill
+      className="object-contain h-4 w-4 sm:h-9 sm:w-9 p-2"
+    />
+  </div>
+
+  {/* 2nd Logo */}
+  <div
+    className="absolute w-11 h-11 sm:w-16 sm:h-16 bg-white border rounded-xl shadow-lg flex items-center justify-center
+     transform
+    -translate-x-[80px] translate-y-[2px] rotate-[-10deg]
+    sm:-translate-x-[100px] xl:translate-y-[10px] xl:rotate-[-10deg]"
+  >
+    <Image
+      src="/images/landingPage/applepay.svg"
+      alt="Apple Pay"
+      fill
+      className="object-contai h-4 w-4 sm:h-9 sm:w-9 p-2"
+    />
+  </div>
+
+  {/* 3rd Logo */}
+  <div
+    className="absolute  w-11 h-11 sm:w-16 sm:h-16 bg-white border rounded-xl shadow-lg flex items-center justify-center
+     transform
+    -translate-x-[10px] translate-y-[-10px] rotate-[0deg]
+    sm:-translate-x-[0px] xl:translate-y-[-10px] xl:rotate-[0deg]"
+  >
+    <Image
+      src="/images/landingPage/googlePay.svg"
+      alt="Google Pay"
+      fill
+      className="object-contain h-4 w-4 sm:h-9 sm:w-9 p-2"
+    />
+  </div>
+
+  {/* 4th Logo */}
+  <div
+    className="absolute w-11 h-11 sm:w-16 sm:h-16 bg-white border rounded-xl shadow-lg flex items-center justify-center
+    transform
+    translate-x-[60px] translate-y-[-0px] rotate-[10deg]
+    sm:translate-x-[100px] xl:translate-y-[10px] xl:rotate-[10deg]"
+  >
+    <Image
+      src="/images/landingPage/paypal.svg"
+      alt="Paypal"
+      fill
+      className="object-contain h-4 w-4 sm:h-9 sm:w-9 p-2"
+    />
+  </div>
+
+  {/* 5th Logo */}
+  <div
+    className="absolute w-11 h-11 sm:w-16 sm:h-16 bg-white border rounded-xl shadow-lg flex items-center justify-center
+    transform
+    -translate-x-[-120px] translate-y-[20px] rotate-[22deg]
+    sm:translate-x-[200px] xl:translate-y-[40px] xl:rotate-[22deg]"
+  >
+    <Image
+      src="/images/landingPage/payoneer.svg"
+      alt="Payoneer"
+      fill
+      className="object-contain h-4 w-4 sm:h-9 sm:w-9 p-2"
+    />
+  </div>
+</div>
+
             </div>
 
           </div>

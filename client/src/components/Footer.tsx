@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="relative bg-primary text-white pt-16 pb-8 overflow-hidden">
       {/* Top Section */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-10 relative z-10 px-16">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-10 relative z-10 px-4 sm:px-16">
         {/* Logo */}
         <div className="flex flex-col space-y-6">
 
@@ -67,8 +67,8 @@ const Footer = () => {
       <div className="h-[8vw] "></div>
 
       {/* Big Background Text */}
-      <h1 className=" w-full text-[16.19vw] font-poppins   text-[#FF6161]/75 leading-none tracking-wide">
-        <span className=" relative -left-7 ">COLLAB</span><span className=" relative right-7">VERGE</span>
+      <h1 className=" w-full text-[15.8vw] sm:text-[15vw] xl:text-[14.5vw] font-poppins   text-[#FF6161]/75 leading-none tracking-wide">
+        <span className=" relative -left-5 ">COLLAB</span><span className=" relative right-7">VERGE</span>
       </h1>
     </footer>
   );
