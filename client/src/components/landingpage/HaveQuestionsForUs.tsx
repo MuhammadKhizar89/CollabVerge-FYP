@@ -45,7 +45,7 @@ const [openQuestion, setOpenQuestion] = useState<string | null>("citizenship")
   const currentFaqs = activeTab === 'brands' ? faqData.brands : faqData.creators;
 
   return (
-    <div className="min-h-screen bg-white px-6 py-16">
+    <div className="min-h-screen px-6 py-16">
       <style jsx>{`
         @keyframes fadeInUp {
           from {
@@ -83,7 +83,7 @@ const [openQuestion, setOpenQuestion] = useState<string | null>("citizenship")
                 className={`px-6 py-1 rounded-full text-base font-medium transition-colors ${
                   activeTab === 'brands'
                     ? 'bg-black text-white'
-                    : 'bg-white text-black'
+                    : ''
                 }`}
               >
                 Brands & Businesses
@@ -93,7 +93,7 @@ const [openQuestion, setOpenQuestion] = useState<string | null>("citizenship")
                 className={`px-6 py-1 rounded-full text-base font-medium transition-colors ${
                   activeTab === 'creators'
                     ? 'bg-black text-white'
-                    : 'bg-white text-black'
+                    : ''
                 }`}
               >
                 Creators & Influencers

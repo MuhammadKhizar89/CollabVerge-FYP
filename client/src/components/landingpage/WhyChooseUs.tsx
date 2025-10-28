@@ -165,7 +165,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="flex flex-wrap mt-6 gap-4">
+        <div className="flex flex-wrap mt-6 gap-4 ">
           {/* Card 3 */}
           <div
             className="rounded-2xl overflow-hidden md:col-span-1 h-64 sm:h-80 relative w-full lg:w-[70%]"
