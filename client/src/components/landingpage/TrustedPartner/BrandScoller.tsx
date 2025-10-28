@@ -1,6 +1,6 @@
 "use client";
-import style from '@/styles/landing-page.module.css';
 import { InstagramIcon } from "@/icons";
+import style from "@/styles/landing-page.module.css";
 const brands = [
   { name: "Snapchat", icon: "/images/hero-2.jpg" },
   { name: "Nike", icon: "/images/hero-2.jpg" },

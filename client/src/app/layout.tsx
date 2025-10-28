@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Playfair_Display, Poppins } from "next/font/google"
-import PrivateRoute from "@/components/PrivateRoute";
+import PrivateRoute from "@/components/layout/PrivateRoute";
 import { ThemeProvider } from "next-themes";
 export const metadata: Metadata = {
   title: "Create Next App",
